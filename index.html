@@ -3,7 +3,7 @@
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirsten Erich</title>
-	<link rel="icon" href="/images/kirstenbitmoji.png">
+	<link rel="icon" href="/images/kirsten-bitmoji.png">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -14,13 +14,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Anton|Amatic+SC" rel="stylesheet">
-    
-    <style>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Satisfy" rel="stylesheet">
+	<style>
+	  .custom-nav {
+		background-color: #414141;
+		font-family: 'Anton', sans-serif;
+		font-size: 18px;
+		margin-bottom: 20px;
+	  }
+	  .custom-nav a{
+		
+	  }
+	  .custom-nav>li>a{
+		color: white;
+		border-radius:0px;
+	  }
+	  .custom-nav>li.active>a{
+		background-color: #414141;
+		color: #d8d8e6;
+	  }
+	  .custom-nav>li.active>a:hover {
+		background-color: #414141;
+	  }
+	  .custom-nav>li>a:hover {
+		background-color: #d8d8e6;
+	  }
+	  .vertical-align {
+		  display: flex;
+		  align-items: center;
+	  }
       #myname {
-        font-family: 'Anton', sans-serif;
+        font-family: 'Rock Salt', cursive;
         color: #414141;
-        font-size: 72px;
+        font-size: 56px;
         text-align: center;
+
       }
       #mytagline {
         font-family: 'Amatic SC', cursive;
@@ -29,26 +58,76 @@
         text-align: center;
         margin-top: -14px;
       }
+	  .categories {
+		font-family: 'Amatic SC', cursive;
+		color: #414141;
+		font-size: 80px;
+		text-align: center;
+	  }
+	  /*img{
+		filter: grayscale(100%);
+	  }
+	  img:hover {
+		filter: grayscale(0%);
+	  }*/
+	  @media (max-width: 767px) {
+		.vertical-align {
+			display: block; /* Turn off the flexible box layout */
+		}
+	  }
+	  .footer {
+		height: 100px;
+		background-color: black;
+	  }
     </style>
     <!--link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script-->
   </head>
   <body>
-	<div class="container">
-		<ul class="nav nav-pills">
+	
+		<ul class="nav nav-pills custom-nav">
 		  <li role="presentation" class="active"><a href="#">Home</a></li>
 		  <li role="presentation"><a href="/resume">Resume</a></li>
 		  <li role="presentation"><a href="#">Projects</a></li>
 		</ul>
-		<h1 id="myname">KIRSTEN ERICH</h1>
-		<h2 id="mytagline">Coder / Artist / Crossfitter</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+			<h1 id="myname">Kirsten Erich</h1>
+			</div>
+			<!--h2 id="mytagline">Coder / Artist / Crossfitter</h2-->
+		</div>
+		<hr>
     
-      <div class="row">
-        <div class="col-sm-3"><img src="https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/16464782_179465475872828_5254528771645505536_n.jpg" class="img-responsive"></div>
-        <div class="col-sm-3"><img src="https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/15875898_1613538875621669_7990262101262204928_n.jpg" class="img-responsive"></div>
-        <div class="col-sm-3"><img src="https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/15043903_865738990227895_1054277311387402240_n.jpg" class="img-responsive"></div>
-        <div class="col-sm-3"><img src="https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/13167321_1020584484695209_1134409554_n.jpg" class="img-responsive"></div>
-      </div>
+		<div class="categories">
+		  <div class="row vertical-align">
+
+			<div class="col-sm-3">MIND</div>
+			<div class="col-sm-3"><img src="/images/clemson-graduation.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/tiaa-training.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/up-art.jpg" class="img-responsive"></div>
+
+		  </div>
+		  <hr>
+		  <div class="row vertical-align">
+			<div class="col-sm-3"><img src="/images/yoga-1.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/koln-lunch.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/crossfit-clemson.jpg" class="img-responsive"></div>
+			<div class="col-sm-3">BODY</div>
+		  </div>
+		  <hr>
+		  <div class="row vertical-align">
+			<div class="col-sm-3">SPIRIT</div>
+			<div class="col-sm-3"><img src="/images/venice-italy.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/max-the-kitten.jpg" class="img-responsive"></div>
+			<div class="col-sm-3"><img src="/images/greenway-art.jpg" class="img-responsive"></div>
+		  </div>
+		</div>
+		<br>
+
     </div>
+	<!--div class="footer">
+		Kirsten Footer
+	</div-->
   </body>
 </html>
